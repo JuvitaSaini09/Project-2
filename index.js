@@ -1,12 +1,17 @@
 var readlineSync = require('readline-sync'); 
 
 const chalk = require('chalk');
+console.log(" \n") 
+
+console.log(chalk.white(chalk.bgBlue("\n Welcome to Juvita's Quiz on Bollywood \n")));
+
+console.log("Rules : \n 1) You will be awarded score 1\n for every right answer \n 2) If you score more than 5 \n then you will reach level 2\n 3) Level 1 contain ten questions  \n 4) Level 2 contain 4 questions ")
 
 
 
-console.log(chalk.white(chalk.bgBlue("\n Welcome to Juvita's Quiz on Bollywood")));
+
 console.log("\n ")
-console.log(("            ")+chalk.hex("#a64dff")(chalk.bgWhite("Level 1\n")));
+console.log(("            ")+chalk.hex("#2d0745")(chalk.bgWhite("Level 1\n")));
 
 var score=0;
 var QuesOne={
@@ -86,7 +91,7 @@ A:"A) Singer",
 B:"B) Actress",
 C:"C) Journalist",
 D:"D) Lawer",
-ans:"b"
+ans:"B"
 }
 
 var Quesnine={ 
@@ -186,12 +191,12 @@ if(userAns.toUpperCase()===Ans.toUpperCase())
 
  console.log("\n")
 } 
-if(score=>5)
+if(score>=5)
 { console.log("\n");
-  console.log(chalk.black(chalk.bgHex("#e6ccff")("**Congratulations You reached Level 2**\n"))); 
+  console.log(chalk.black(chalk.bgHex("#FFFFFF")("**Congratulations You reached Level 2**\n"))); 
 
  console.log("\n ")
-console.log(("            ")+chalk.hex("#a64dff")(chalk.bgWhite("Level 2\n")));
+console.log(("            ")+chalk.hex("#2d0745")(chalk.bgWhite("Level 2\n")));
 
  for(var i=0;i<array2.length;i++)
   { 
