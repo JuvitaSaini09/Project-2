@@ -3,8 +3,11 @@ var readlineSync = require('readline-sync');
 const chalk = require('chalk');
 console.log(" \n")
 
-console.log(chalk.white(chalk.bgBlue("\n Welcome to Juvita's Quiz on Bollywood \n")));
 
+console.log(chalk.white(chalk.bgBlue("\n Welcome to Juvita's Quiz on Bollywood \n")));
+var userName= readlineSync.question("Enter your Name --->"); 
+console .log("\n")
+console.log(chalk.white.bgBlue( userName+",You are ready to play the quiz !!"))
 console.log("Rules : \n 1) You will be awarded score 1\n for every right answer \n 2) If you score more than 5 \n then you will reach level 2\n 3) Level 1 contain ten questions  \n 4) Level 2 contain 4 questions ")
 
 
